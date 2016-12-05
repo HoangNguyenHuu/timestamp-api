@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var moment = require("moment")
 app.get('/', function(req, res){
-   res.send('Hello World!') 
+   res.send('Put your  <h1>date time</h1> or your <h1>unixtime</h1> after url to get json') 
 })
 app.get('/:query', function (req, res) {
     var query = req.params.query;
